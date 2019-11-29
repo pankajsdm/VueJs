@@ -1,0 +1,12 @@
+.table th, .table td {
+    text-transform: capitalize;
+}
+.toasted-container .successTosted{
+    background-color: #4f9043 !important;
+}
+.toasted-container .errorTosted{
+    background-color: #ea3838 !important;
+}
+.toasted-container .successTosted{
+    top: 60px !important;
+}

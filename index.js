@@ -1,0 +1,13 @@
+const express = require('express');
+const path = require('path');
+const serveStatic = require('serve-static');
+
+let app = express();
+app.use(serveStatic(__dirname + "/dist"));
+
+const port = 4226;
+//require('dotenv').config();
+
+app.listen(port, () => {
+  console.log('Listening on port ' + port);
+});

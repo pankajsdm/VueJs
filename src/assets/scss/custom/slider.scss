@@ -1,0 +1,98 @@
+.agile__list {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 93%;
+}
+
+.slide:before {
+    height: 80% !important;
+    background-color: transparent!important;
+}
+
+.agile {
+    &__dots {
+        bottom: 2%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        background: rgb(109, 70, 70);
+    }
+
+    &__dot {
+       
+        button {
+            background-color: transparent;
+            border: 1px solid #fff;
+
+            &:hover {
+                background-color: rgb(87, 5, 5);
+            }
+        }
+
+        &--current {
+            button {
+                background-color:rgb(156, 13, 13);
+            }
+        }
+    }
+
+    &__arrow {
+        height: 100%;
+        top: 0;
+        position: relative;
+        width: 80px;
+
+        &--next {
+            left: 528px;
+            width: 30px;
+            top: -221px;
+        }
+
+        &--prev {
+            left: 6px;
+            width: 30px;
+            top: -221px;
+        }
+        
+        &:hover {
+            background-color: rgba(rgb(151, 10, 10), .5);
+
+            #arrow-svg {
+                fill: #fff;
+            }
+        }
+
+        &[disabled] {
+            opacity: 0;
+        }
+
+        #arrow-svg {
+            fill: rgba(#fff, .4);
+            height: 25px;
+        }
+    }
+}
+
+.slide {
+    background: {
+        position: center;
+        size: cover;
+    }
+
+    &:before {
+        background-color: rgba(#000, .2);
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    /* &--1 {
+        background-image: url(../img/bg-1_1.jpg);
+    } */
+
+}
+
